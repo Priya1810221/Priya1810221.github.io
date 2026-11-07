@@ -1,0 +1,337 @@
+<title>Priya Kumari Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portfolio of Priya Kumari, a Computer Science engineer working in AI, machine learning and computer vision.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="animations.css">
+
+<div class="sky-grid" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="Priya Kumari, back to top">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <g stroke="#8fa8c8" stroke-width="1" fill="none">
+          <path d="M6 28 L15 12 L26 20 L34 8"/><path d="M15 12 L22 33 L26 20"/>
+        </g>
+        <g fill="#d4956a"><circle cx="6" cy="28" r="2.4"/><circle cx="15" cy="12" r="2.4"/><circle cx="26" cy="20" r="2.4"/><circle cx="34" cy="8" r="2.4"/></g>
+        <circle cx="22" cy="33" r="2" fill="#e8e4d9"/>
+      </svg>
+      <span>Priya Kumari</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- 02 HERO -->
+  <header class="hero" id="top">
+    <canvas id="constellation" aria-hidden="true"></canvas>
+    <div class="orbits" aria-hidden="true">
+      <svg viewBox="0 0 800 800" fill="none">
+        <g style="stroke:#1e2236" stroke-width="1">
+          <circle cx="400" cy="400" r="120"/><circle cx="400" cy="400" r="210"/><circle cx="400" cy="400" r="300"/><circle cx="400" cy="400" r="385"/>
+        </g>
+        <g style="stroke:#5f7a9a" stroke-width="1" stroke-dasharray="2 10">
+          <line x1="0" y1="400" x2="800" y2="400"/><line x1="400" y1="0" x2="400" y2="800"/>
+        </g>
+        <g class="spin-a"><circle cx="400" cy="190" r="5" style="fill:#d4956a"/><circle cx="400" cy="190" r="11" style="stroke:#d4956a" stroke-opacity=".35"/></g>
+        <g class="spin-b"><circle cx="700" cy="400" r="3.5" style="fill:#8fa8c8"/></g>
+        <g class="spin-c"><circle cx="400" cy="15" r="4" style="fill:#e8e4d9"/><circle cx="130" cy="400" r="2.5" style="fill:#b8956a"/></g>
+      </svg>
+    </div>
+
+    <div class="wrap">
+      <div class="hero-in">
+        <p class="coords">Chart 01 · Raigarh · 21.90° N, 83.40° E</p>
+        <h1>Priya <em>Kumari</em></h1>
+        <p class="tagline">Charting a course through artificial intelligence, machine learning and computer vision.</p>
+        <p class="hero-sub">Final-year B.Tech Computer Science student at OP Jindal University. I build prediction systems, vision applications and the web apps that put them in people's hands.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn btn-quiet" href="https://github.com/Priya1810221">GitHub</a>
+          <a class="btn btn-quiet" href="https://www.linkedin.com/in/priya-kumari-4495b3291">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><div class="wrap"><span>↓</span> Scroll to begin the survey</div></div>
+  </header>
+
+  <!-- 03 ABOUT -->
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="sec-no">01</span><h2 id="about-h">About</h2><span class="sec-coord">RA 02h 00m · Dec +21.90°</span></div>
+      <div class="about">
+        <div class="about-text reveal">
+          <p>I like problems where data has to turn into a decision someone can act on.</p>
+          <p>I am a Computer Science Engineering student with hands-on experience in artificial intelligence, machine learning, computer vision, web development and data analytics. Through internships and academic projects I have built predictive analytics systems, computer vision applications and responsive web apps.</p>
+          <p>I work in Python and the usual ML stack, and I enjoy learning new technology and applying it to real-world problems. Teamwork, clear communication and good judgment matter to me as much as the code.</p>
+        </div>
+        <div class="readouts reveal" role="list" aria-label="Key figures">
+          <div class="readout" role="listitem"><b>8.5</b><span>B.Tech CGPA</span></div>
+          <div class="readout" role="listitem"><b>363</b><span>GATE 2026 score</span></div>
+          <div class="readout" role="listitem"><b>4</b><span>Internships</span></div>
+          <div class="readout" role="listitem"><b>₹7 L</b><span>MSME 5.0 grant</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 EXPERIENCE -->
+  <section class="section alt" id="experience" aria-labelledby="exp-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="sec-no">02</span><h2 id="exp-h">Experience</h2><span class="sec-coord">RA 04h 00m · Dec +21.90°</span></div>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-time">Jul – Aug 2026<small>2 months</small></div>
+          <div class="tl-mark"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>Infosys Springboard</h3>
+            <span class="tl-role">AI / ML Intern</span>
+            <ul>
+              <li>Developed HealthForecast AI, an end-to-end hospital readmission prediction and patient risk intelligence platform.</li>
+              <li>Built machine learning models and predictive analytics in Python.</li>
+              <li>Developed backend APIs with FastAPI, using PostgreSQL and SQLAlchemy, and integrated a React and Vite frontend.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-time">18 May – 18 Aug 2026<small>3 months</small></div>
+          <div class="tl-mark"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>Tata Hitachi Construction Machinery</h3>
+            <span class="tl-role">Computer Vision Intern</span>
+            <ul>
+              <li>Developed an AI-powered Time &amp; Motion Study system for activity recognition, productivity analysis and workplace monitoring.</li>
+              <li>Gained practical experience in computer vision, AI/ML, industrial automation and manufacturing process optimization with Python, OpenCV and YOLOv8.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-time">May – Aug 2025<small>4 months</small></div>
+          <div class="tl-mark"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>Growth Code Digital</h3>
+            <span class="tl-role">Frontend Development Intern</span>
+            <ul>
+              <li>Developed responsive, interactive web pages with user-friendly interfaces.</li>
+              <li>Built responsive layouts for different devices while working in a collaborative development team.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-time">Apr – Jul 2025<small>4 months</small></div>
+          <div class="tl-mark"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>OP Jindal University</h3>
+            <span class="tl-role">Admission and Marketing Department</span>
+            <ul>
+              <li>Assisted in the student admission process and managed prospective student leads.</li>
+              <li>Supported marketing, outreach, CRM management, documentation and communication.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 05 PROJECTS -->
+  <section class="section" id="projects" aria-labelledby="proj-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="sec-no">03</span><h2 id="proj-h">Projects</h2><span class="sec-coord">RA 06h 00m · Dec +21.90°</span></div>
+      <div class="plates">
+
+        <article class="plate plate-1 reveal">
+          <span class="numeral" aria-hidden="true">I</span>
+          <span class="plate-kicker">Academic project · In progress</span>
+          <h3>Digital Wardrobe for Smart Styling and Sustainable Fashion</h3>
+          <span class="grant">₹7 Lakh <span>MSME Idea Hackathon 5.0 grant</span></span>
+          <p>An application that lets users store, organize and virtually try on clothes using virtual reality. It supports smarter styling choices and more sustainable fashion habits.</p>
+          <span class="plate-role">My role: AI recommendation and backend developer</span>
+          <a class="link-arrow" href="https://github.com/Priya1810221">View on GitHub →</a>
+          <ul class="stack"><li>AI/ML</li><li>VR</li><li>Computer Vision</li><li>3D Modeling</li><li>Cloud Storage</li></ul>
+        </article>
+
+        <article class="plate plate-2 reveal">
+          <span class="numeral" aria-hidden="true">II</span>
+          <span class="plate-kicker">Academic project</span>
+          <h3>HungerSense AI</h3>
+          <p>An AI-powered platform that predicts community hunger risk from multi-source data. It combines analytics, LLM-powered insights and automated workflows for proactive decision-making.</p>
+          <span class="plate-role">My role: AI and backend developer</span>
+          <a class="link-arrow" href="https://github.com/Priya1810221">View on GitHub →</a>
+          <ul class="stack"><li>Python</li><li>FastAPI</li><li>n8n</li><li>Groq (Llama 3.1)</li><li>REST APIs</li><li>Pandas</li><li>Google Sheets</li><li>Gmail API</li></ul>
+        </article>
+
+        <article class="plate plate-3 reveal">
+          <span class="numeral" aria-hidden="true">III</span>
+          <span class="plate-kicker">Infosys Springboard · 2026</span>
+          <h3>HealthForecast AI</h3>
+          <p>An end-to-end hospital readmission prediction and patient risk intelligence platform, from the machine learning models to the API and a React and Vite interface.</p>
+          <a class="link-arrow" href="https://github.com/Priya1810221">View on GitHub →</a>
+          <ul class="stack"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>scikit-learn</li><li>React</li><li>Vite</li></ul>
+        </article>
+
+        <article class="plate plate-4 reveal">
+          <span class="numeral" aria-hidden="true">IV</span>
+          <span class="plate-kicker">Tata Hitachi · 2026</span>
+          <h3>AI Time &amp; Motion Study</h3>
+          <p>An AI-powered system for activity recognition, productivity analysis and workplace monitoring, built during my internship to support manufacturing process optimization.</p>
+          <a class="link-arrow" href="https://github.com/Priya1810221">View on GitHub →</a>
+          <ul class="stack"><li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>NumPy</li><li>Pandas</li><li>Git</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 SKILLS -->
+  <section class="section alt" id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="sec-no">04</span><h2 id="skills-h">Skills</h2><span class="sec-coord">RA 08h 00m · Dec +21.90°</span></div>
+      <div class="orbit-grid">
+        <article class="orbit-card reveal" data-orbit>
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"></svg>
+          <div><h3>Languages</h3><ul class="skill-list"><li>C</li><li>Python</li><li>HTML5</li><li>CSS</li><li>PHP (basics)</li></ul></div>
+        </article>
+        <article class="orbit-card reveal" data-orbit>
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"></svg>
+          <div><h3>AI and ML</h3><ul class="skill-list"><li>Computer Vision</li><li>Deep Learning</li><li>NLP</li><li>LLMs</li><li>Generative AI</li><li>Prompt Engineering</li></ul></div>
+        </article>
+        <article class="orbit-card reveal" data-orbit>
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"></svg>
+          <div><h3>Frameworks</h3><ul class="skill-list"><li>OpenCV</li><li>YOLOv8</li><li>NumPy</li><li>Pandas</li><li>scikit-learn</li><li>React</li><li>FastAPI</li></ul></div>
+        </article>
+        <article class="orbit-card reveal" data-orbit>
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"></svg>
+          <div><h3>Databases</h3><ul class="skill-list"><li>MySQL</li><li>PostgreSQL</li></ul></div>
+        </article>
+        <article class="orbit-card reveal" data-orbit>
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"></svg>
+          <div><h3>Tools</h3><ul class="skill-list"><li>Git</li><li>GitHub</li><li>VS Code</li><li>n8n</li><li>Vite</li><li>Vercel</li><li>Render</li><li>Gmail API</li><li>Google Sheets</li></ul></div>
+        </article>
+        <article class="orbit-card reveal" data-orbit>
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"></svg>
+          <div><h3>Data and Design</h3><ul class="skill-list"><li>Data Analytics</li><li>Power BI</li><li>UI/UX</li><li>Figma</li><li>Canva</li></ul></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 EDUCATION + CERTIFICATIONS -->
+  <section class="section" id="education" aria-labelledby="edu-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="sec-no">05</span><h2 id="edu-h">Education &amp; Certifications</h2><span class="sec-coord">RA 10h 00m · Dec +21.90°</span></div>
+      <div class="ledger">
+        <div class="reveal">
+          <h3>Education</h3>
+          <div class="edu-row"><div><strong>B.Tech, Computer Science Engineering</strong><br><span class="sub">OP Jindal University · Expected May 2027</span></div><span class="res">8.5<span class="sub"> CGPA</span></span></div>
+          <div class="edu-row"><div><strong>Class XII</strong><br><span class="sub">CBSE · 2022–23</span></div><span class="res">75%</span></div>
+          <div class="edu-row"><div><strong>Class X</strong><br><span class="sub">CBSE · 2020–21</span></div><span class="res">91%</span></div>
+        </div>
+        <div class="reveal">
+          <h3>Certifications</h3>
+          <div class="certs">
+            <div><h4>Infosys</h4><ul><li>AI Primer</li><li>Computer Vision 101</li><li>Deep Learning for Developers</li><li>Generative AI Unleashing</li><li>Generative Models for Developers</li><li>Introduction to OpenAI GPT Models</li><li>Introduction to Data Science, AI, NLP, Deep Learning</li><li>Prompt Engineering</li></ul></div>
+            <div><h4>IBM</h4><ul><li>Getting Started with Artificial Intelligence</li><li>Getting Started with Generative AI</li><li>Machine Learning</li><li>Web Development: Learn HTML</li></ul></div>
+            <div><h4>Cisco</h4><ul><li>Data Analytics Essentials</li><li>Introduction to Data Science</li></ul><h4 style="margin-top:20px">GreyLearn</h4><ul><li>C++ Programming</li><li>Advanced Excel</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 ACHIEVEMENTS -->
+  <section class="section alt" id="achievements" aria-labelledby="ach-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="sec-no">06</span><h2 id="ach-h">Achievements</h2><span class="sec-coord">RA 12h 00m · Dec +21.90°</span></div>
+      <div class="constellation-wrap">
+        <ol class="nodes">
+          <li class="node key reveal"><span class="node-yr">2026</span><p>Cleared GATE 2026 with a score of 363.</p></li>
+          <li class="node key reveal"><span class="node-yr">2026</span><p>Received a ₹7 lakh grant at MSME Idea Hackathon 5.0 for the AR/VR Digital Wardrobe.</p></li>
+          <li class="node reveal"><span class="node-yr">2026</span><p>Second position, Skill India Competition (state level), Painting and Decoration.</p></li>
+          <li class="node reveal"><span class="node-yr">2026</span><p>Shortlisted in Round 1 of the Vishwakarma Awards 2026.</p></li>
+          <li class="node reveal"><span class="node-yr">2025</span><p>Editor's Choice Author Award, National Book Writing Fest.<small>Also a Jury's Choice of Excellence certificate, rank 42.</small></p></li>
+          <li class="node reveal"><span class="node-yr">2024</span><p>First position, Key Storm typing test, OP Jindal University.</p></li>
+          <li class="node reveal"><span class="node-yr">2024</span><p>Consolation prize in poster making, organized by the National Service Scheme.</p></li>
+          <li class="node reveal"><span class="node-yr">NPTEL</span><p>Elite class in Introduction to Internet of Things.</p></li>
+          <li class="node reveal"><span class="node-yr">Author</span><p>Published a story book, "The Story of an Unknown Girl".</p></li>
+        </ol>
+        <div class="also reveal">
+          <div>
+            <h3>Participated</h3>
+            <ul>
+              <li>Smart India Hackathon 2023, 2024 and 2025</li>
+              <li>Bharatiya Antariksh Hackathon 2026</li>
+              <li>Drone Technology bootcamp, NIELIT Bhubaneswar</li>
+              <li>Innovation, Design and Entrepreneurship Bootcamp, September 2024</li>
+              <li>International Conference on Innovation, Entrepreneurship and Management for Sustainable Development, 2025</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Leadership and service</h3>
+            <ul>
+              <li>Co-Convenor, Technorollix 2026</li>
+              <li>Event Manager, Technorollix 2025; Event Coordinator, Technorollix 2024</li>
+              <li>NSS volunteer since 2024</li>
+              <li>OTCON 3.0 and 4.0; National Innovation Fest 2.0</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Attended</h3>
+            <ul>
+              <li>OTCON 2.0 at IIT Bhilai</li>
+              <li>"AI for Students: Build Your Own Generative AI Model" workshop by NXTWAVE</li>
+              <li>Design Thinking, Critical Thinking and Innovation Design workshop</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 CONTACT -->
+  <section class="section" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="sec-no">07</span><h2 id="contact-h">Contact</h2><span class="sec-coord">RA 14h 00m · Dec +21.90°</span></div>
+      <div class="contact-card reveal">
+        <div>
+          <h2>Send a <em>signal</em></h2>
+          <p>I am open to internships and entry-level roles in AI, machine learning and software development. Email is the fastest way to reach me.</p>
+        </div>
+        <dl class="contact-links">
+          <div class="c-row"><dt>Email</dt><dd><a id="email-addr" href="mailto:er.priya.1810@gmail.com">er.priya.1810@gmail.com</a><button class="copy-btn" id="copy-email" type="button">Copy</button></dd></div>
+          <div class="c-row"><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/priya-kumari-4495b3291">priya-kumari-4495b3291</a></dd></div>
+          <div class="c-row"><dt>GitHub</dt><dd><a href="https://github.com/Priya1810221">Priya1810221</a></dd></div>
+          <div class="c-row"><dt>Location</dt><dd>Raigarh, Chhattisgarh, India</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 10 FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <span>21.90° N · 83.40° E · Raigarh</span>
+    <span>© <span id="year">2026</span> Priya Kumari</span>
+    <a href="#top">Return to origin ↑</a>
+  </div>
+</footer>
+
+<script src="constellation.js" defer></script>
+<script src="nav.js" defer></script>
+<script src="scroll.js" defer></script>
+<script src="cursor.js" defer></script>
+<script src="main.js" defer></script>

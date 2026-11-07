@@ -1,0 +1,49 @@
+/* Motion, keyframes and reduced-motion handling */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes orbit {
+  to { transform: rotate(360deg); }
+}
+@keyframes orbit-rev {
+  to { transform: rotate(-360deg); }
+}
+@keyframes cue {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50%      { transform: translateY(6px); opacity: 1; }
+}
+
+/* hero load sequence (ends fully visible) */
+.hero-in > * { animation: fade-up 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.hero-in > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-in > *:nth-child(2) { animation-delay: 0.15s; }
+.hero-in > *:nth-child(3) { animation-delay: 0.3s; }
+.hero-in > *:nth-child(4) { animation-delay: 0.42s; }
+.hero-in > *:nth-child(5) { animation-delay: 0.54s; }
+
+/* orbits in the hero */
+.orbits .spin-a { transform-box: view-box; transform-origin: center; animation: orbit 140s linear infinite; }
+.orbits .spin-b { transform-box: view-box; transform-origin: center; animation: orbit-rev 220s linear infinite; }
+.orbits .spin-c { transform-box: view-box; transform-origin: center; animation: orbit 320s linear infinite; }
+.scroll-cue span { animation: cue 2.4s ease-in-out infinite; }
+
+/* skill rings */
+.ring .spin { transform-box: view-box; transform-origin: center; animation: orbit 90s linear infinite; }
+
+/* scroll reveal: stays readable at rest (opacity never below 0.25) */
+.js-ready .reveal {
+  opacity: 0.25;
+  transform: translateY(16px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.js-ready .reveal.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .js-ready .reveal { opacity: 1; transform: none; }
+}

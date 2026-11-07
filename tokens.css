@@ -1,0 +1,43 @@
+/* Design tokens: "Stellar Cartography". Single committed dark look. */
+:root {
+  color-scheme: dark;
+
+  /* space */
+  --void: #07080d;
+  --deep-space: #0c0e17;
+  --nebula: #141829;
+  --stellar-dust: #1e2236;
+
+  /* text */
+  --starlight: #e8e4d9;
+  --celestial: #c8c0a8;
+  --dim: #8b8676; /* lifted slightly from #7a7566 to pass WCAG AA on --void */
+
+  /* accents */
+  --nova: #d4956a;
+  --nova-glow: #e8b48a;
+  --comet: #8fa8c8;
+  --comet-dim: #5f7a9a;
+  --pulsar: #b8956a;
+
+  /* type */
+  --font-display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --font-mono: "Space Mono", ui-monospace, Menlo, Consolas, monospace;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: clamp(1.8rem, 3vw, 2.3rem);
+  --fs-2xl: clamp(2.5rem, 5.5vw, 4rem);
+  --fs-hero: clamp(3.6rem, 12vw, 8.5rem);
+
+  /* layout */
+  --maxw: 1180px;
+  --nav-h: 64px;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --sp-section: clamp(72px, 10vw, 128px);
+}
